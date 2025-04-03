@@ -106,3 +106,9 @@ def main(args=sys.argv):
             logging.error("File not exist! '{}'".format(args.input))
             return
         convert_map_format(args.input, args.output)
+
+if __name__ == '__main__':
+    # cmd = "imap -m /Users/cloudsky/PycharmProjects/HD_Map_Conversion/data/maps/Apollo/demo/sim_map.txt"
+    # cmd = "imap -m /Users/cloudsky/PycharmProjects/HD_Map_Conversion/data/maps/OpenDrive/Apollo_maps/town11/Town11.xodr"
+    cmd = "imap -m /Users/cloudsky/PycharmProjects/HD_Map_Conversion/data/maps/Apollo/ConfVE/borregas_ave/base_map.bin"
+    main(cmd.split(" "))
