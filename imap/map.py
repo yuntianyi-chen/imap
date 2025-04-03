@@ -144,7 +144,7 @@ class Map:
         pxy = []
         for point in polygon.point:
             pxy.append([point.x, point.y])
-        patch = Polygon(pxy, closed=True)
+        patch = Polygon(pxy, closed=True, edgecolor=color_val)
         ax.add_patch(patch)
 
     @staticmethod
